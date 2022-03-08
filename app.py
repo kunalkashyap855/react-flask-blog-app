@@ -9,7 +9,7 @@ from flask_cors import CORS, cross_origin
 app = Flask(__name__, static_folder='frontend/build', static_url_path='')
 CORS(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://kunal:asssrktv@localhost/blogAppdb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://bcc02a2046fefa:29a72846@us-cdbr-east-05.cleardb.net/heroku_6c5b65b85a2f35e?reconnect=true'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
